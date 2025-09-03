@@ -1,24 +1,29 @@
-import { Outfit } from "next/font/google";
+import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
-import { AppContextProvider } from "@/context/AppContext";
-import { Toaster } from "react-hot-toast";
 
-const outfit = Outfit({ subsets: ['latin'], weight: ["300", "400", "500"] })
+const outfit = Outfit({
+  subsets: ["latin"], weight: ["400", "500", "600", "700"]
+});
+
+const ovo = Ovo({
+  subsets: ["latin"], weight: ["400"]
+});
 
 export const metadata = {
-  title: "QuickCart - GreatStack",
-  description: "E-Commerce with Next.js ",
+  title: "Portfolio - Tyara Regina",
+  description: "",
+  icons: {
+    icon:"/favicon.ico"
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
-      <html lang="en">
-        <body className={`${outfit.className} antialiased text-gray-700`} >
-          <Toaster />
-          <AppContextProvider>
-            {children}
-          </AppContextProvider>
-        </body>
-      </html>
+    <html lang="en" className="scroll-smooth">
+      <body className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden 
+      dark:bg-darkTheme dark:text-white`}>
+        {children}
+      </body>
+    </html>
   );
 }
