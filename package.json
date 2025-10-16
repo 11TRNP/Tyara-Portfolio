@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "motion": "^12.23.12",
+    "motion": "^12.23.24",
     "next": "^15.5.2",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-hot-toast": "^2.5.1"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-hot-toast": "^2.5.1",
+    "router": "^2.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/node": "24.8.0",
+    "@types/react": "19.2.2",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8",

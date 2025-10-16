@@ -1,34 +1,33 @@
-import { assets, workData } from '@/assets/assets'
+import { assets, achivementData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
 import { motion } from "motion/react"
 
-const Work = (isDarkMode) => {
+const Achivement = (isDarkMode) => {
   return (
-    <motion.div id='work' className='w-full px-[12%] py-10 scroll-mt-20'
+    <motion.div id='achivement' className='w-full px-[12%] py-10 scroll-mt-20'
     initial={{opacity:0}} whileInView={{opacity: 1}} transition={{duration: 1}}>
 
       <motion.h4 initial={{opacity:0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.3}}
       className='text-center mb-2 text-lg font-Ovo'>
-        My Portfolio
+        My Achivement
       </motion.h4>
 
       <motion.h2 initial={{opacity:0, y: -20}} whileInView={{opacity: 1, y: 0}} transition={{duration: 0.5, delay: 0.5}}
       className='text-center text-5xl font-Ovo'>
-        My Latest Work
+        My Achivement Collections
       </motion.h2>
 
       <motion.p initial={{opacity:0}} whileInView={{opacity: 1}} transition={{duration: 0.5, delay: 0.7}}
       className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
-        Welcome to my portfolio! Explore a collection of projects showcasing my expertise in Full Stack and Data Specialist.
+        From small wins to major breakthroughs, these are the accomplishments that shaped who I am today.
       </motion.p>
-
+      
       <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6, delay: 0.9 }}
         className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 my-10 dark:text-black'>
-        {workData.map((project, index) => (
+        {achivementData.map((project, index) => (
           <motion.a
             key={index}
-            href={project.link}
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -42,10 +41,6 @@ const Work = (isDarkMode) => {
                 <h2 className='font-semibold'>{project.title}</h2>
                 <p className='text-sm text-gray-700'>{project.description}</p>
               </div>
-              <div className='border rounded-full border-black w-9 aspect-square flex items-center justify-center 
-                shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                <Image src={assets.send_icon} alt='send icon' className='w-5' />
-              </div>
             </div>
           </motion.a>
         ))}
@@ -54,4 +49,4 @@ const Work = (isDarkMode) => {
   )
 }
 
-export default Work
+export default Achivement
