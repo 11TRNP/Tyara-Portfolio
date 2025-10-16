@@ -49,6 +49,9 @@ import postman from './postman.png'
 import mysql from './mysql.jpg'
 import colab from './colab.png'
 import jupyter from './jupyter.png'
+import tyr_image from './tyr-image.jpg'
+import tyrr from './tyrr.jpg'
+import tyrrr from './tyrrr.jpg'
 
 export const assets = {
     user_image,
@@ -102,6 +105,9 @@ export const assets = {
     mysql,
     colab,
     jupyter,
+    tyr_image,
+    tyrrr,
+    tyrr
 };
 
 export const workData = [
