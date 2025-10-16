@@ -31,10 +31,10 @@ const About = ({isDarkMode}) => {
         <motion.div initial={{opacity:0}} whileInView={{opacity: 1}} transition={{duration: 0.6, delay: 0.8}}
           className='flex-1'>
           
-          <p className='mb-10 max-w-2xl font-Ovo'>
-            I’m a Data Analyst and Fullstack Developer from Bekasi with 2 years of experience. 
-            My journey began with an internship at PT BNI, 
-            where I learned to transform data into insights and build digital solutions that create real impact.
+          <p className='mb-10 max-w-2xl font-Ovo text-justify'>
+            Passionate about turning ideas into impactful digital experiences. 
+            I’m a tech enthusiast who loves building smart, user-centered solutions,
+            whether it’s designing and developing apps interfaces, creating insightful business dashboards, or bringing AI to life. 🚀
           </p>
 
           <motion.ul initial={{opacity:0}} whileInView={{opacity: 1}} transition={{duration: 0.8, delay: 1}}
